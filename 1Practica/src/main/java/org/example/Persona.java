@@ -22,4 +22,12 @@ public class Persona {
     public String getCiudad() {
         return ciudad;
     }
+
+
+    // metodo para enviar el compotamiento nada mas,
+    // con que cumpla con la firma de la interfaz Consumer =)
+    public static void metodoRefMostrarNombrePersona(Persona per){
+        System.out.println(per.nombre);
+    }
+
 }

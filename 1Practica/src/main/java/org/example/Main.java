@@ -33,8 +33,11 @@ public class Main {
         System.out.println("-------------------------------------------------------");
         List<Persona> listaDePersonas = GeneradorPersonas.generarPersonas(50);
         listaDePersonas.forEach(persona -> System.out.println(persona.getNombre()));
+        System.out.println("-------------------------------------------------------");
+        listaDePersonas.forEach(Persona::metodoRefMostrarNombrePersona);    // =)
 
-        //Imprimir todos nombres de personas sque empiezan con J
+
+        //Imprimir todos nombres de personas que empiezan con J
         System.out.println("-------------------------------------------------------");
         listaDePersonas.stream()
                 .filter(persona -> persona.getNombre().startsWith("J"))
