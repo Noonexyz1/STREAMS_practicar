@@ -1,23 +1,25 @@
 package org.example;
 
-public class Persona {
+public class Empleado {
     private int id;
     private String nombre;
     private String apellidos;
-    private String celular;
     private int edad;
-    private double estatura;
+    private String puesto;
+    private int salario;
+    private int estatura;
 
-    public Persona(int id, String nombre, String apellidos, String celular, int edad, double estatura) {
+
+    public Empleado(int id, String nombre, String apellidos, int edad, String puesto, int salario, int estatura) {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
-        this.celular = celular;
         this.edad = edad;
+        this.puesto = puesto;
+        this.salario = salario;
         this.estatura = estatura;
     }
-
-    public Persona(){}
+    public Empleado(){}
 
     public int getId() {
         return id;
@@ -43,14 +45,6 @@ public class Persona {
         this.apellidos = apellidos;
     }
 
-    public String getCelular() {
-        return celular;
-    }
-
-    public void setCelular(String celular) {
-        this.celular = celular;
-    }
-
     public int getEdad() {
         return edad;
     }
@@ -59,22 +53,40 @@ public class Persona {
         this.edad = edad;
     }
 
-    public double getEstatura() {
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+    public int getEstatura() {
         return estatura;
     }
 
-    public void setEstatura(double estatura) {
+    public void setEstatura(int estatura) {
         this.estatura = estatura;
     }
 
+
     @Override
     public String toString() {
-        return "Persona{" +
+        return "Empleado{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
-                ", celular='" + celular + '\'' +
                 ", edad=" + edad +
+                ", puesto='" + puesto + '\'' +
+                ", salario=" + salario +
                 ", estatura=" + estatura +
                 '}';
     }

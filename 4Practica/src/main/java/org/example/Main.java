@@ -13,7 +13,7 @@ public class Main {
         leerListaArchivoJSON().forEach(System.out::println);
     }
 
-    public static List<Persona> leerListaArchivoJSON() throws URISyntaxException, IOException {
+    public static List<Empleado> leerListaArchivoJSON() throws URISyntaxException, IOException {
         LeerArchivo leerArchivo = new LeerArchivo();
         File fichero = leerArchivo.getFileFromResourceFile("persona-lista.json");
         ObjectMapper mapper = new ObjectMapper();
